@@ -1,128 +1,114 @@
-/* variaveis de cores */
-:root {
-    --cor-primaria: #0a243e;
-    --cor-destaque: #e74c3c;
+/*variaveis de cores */
+:root{
+    --cor-primaria: #ff0000;
     --cor-texto: #333;
-    --cor-clara: #f9f9f9;
-    --sombra: 0 3px 10px rgba(0, 0, 0,0.5)
+    --cor-clara: #FFFFFF;
+    --sombra: 0 3px 10px rgb(0, 0, 0, 2.0);
+    --cor-destaque: #0000ff;
 }
-
 /* reset layout navegador*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin: 0; /*Margem*/
+    padding: 0; /*adicionar espaço interno dentro de um elemento*/
+    box-sizing: border-box; 
 }
-
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: var(--cor-texto)
+body{
+    font-family: 'Segoe UI', sans-serif; /*Fonte do texto*/
+    line-height: 1.6; /*altura do texto*/
+    color: var(--cor-texto); 
 }
-
-.cabecalho {
+/*conteudo-sobre */
+.cabecalho{
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
-    padding: 1rem 0;
+    padding: 1rem 0 ; /* 1rem equilave a 16px */
 }
-
-.logo {
-    width: 150px;
+/* tamanho do gereção tech */
+.logo{
+    width: 150px;/*largura*/
 }
-
-.container {
-    width: 80%;
+/* sobre-conteudo lado sup-direito */
+.container{
+    width: 80%;/*largura*/
     margin: 0 auto;
 }
-
-.cabecalho .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.cabecalho .container{
+display: flex;
+align-items: center; /* Alinhar item, Mexe na Vertical*/
+justify-content: space-between; /* Alinhar item,Mexe na Horizontal*/
 }
-
-.menu {
+.menu{
     display: flex;
-    gap: 2rem;
-    list-style: none;
+    gap: 1.5rem; /*gap tirar sobre*/
+    list-style: none; /*Os Pontinhos do lado da palavra*/
 }
-
 .menu a {
     color: var(--cor-clara);
-    text-decoration: none;
+    text-decoration: none; /*Decorar o texto*/
 }
-
-.banner {
+.banner{
     position: relative;
     color: var(--cor-clara);
-    padding: 0;
-    overflow: hidden;
-    height: 90vh;
+    padding: 0%; /*adicionar espaço interno dentro de um elemento*/
+    overflow: hidden; /*quando o conteúdo de um elemento é maior do que a área disponível para ele*/
+    height: 90vh;/*Altura*/
     display: flex;
-    align-items: center;
+    align-items: center; /*Alinhar item, Mexe na Vertical*/
 }
-
-.video-container {
+.video-container{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%;/*largura*/
+    right: 100%;
     z-index: -1;
 }
-
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.video-container video{
+    width: 100%;/*largura*/
+    height: 100%;/*Altura*/
+    object-fit: cover;/*controlar como uma imagem*/
     object-position: center;
 }
-
-.overlay {
+/* deixar o video com tom escuro*/
+.overlay { 
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;/*Posição vertical*/
+    left: 0;/*Posição Horizontal */
+    width: 100%;/*largura*/
+    height: 100%;/*Altura*/
+    background: rgba(0, 0, 0, 0.6);
 }
-
 .banner .container {
     max-width: 600px;
     text-align: left;
 }
-
-.sobre {
-    padding: 4rem 0;
+.sobre{
+    padding: 4rem;/*adicionar espaço interno dentro de um elemento*/
 }
-
-.sobre-conteudo {
+.sobre-conteudo{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /*definir colunas*/
     gap: 2rem;
     align-items: center;
 }
-
-.sobre-conteudo img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: var(--sombra);
+/* Imagem do HTML */
+.sobre-conteudo img { 
+   width: 100%;/*largura*/
+   border-radius: 8px; /*arredondar as bordas da img*/
+   box-shadow: var(--sombra);
 }
-
-.sobre-texto ul {
-    list-style: none;
-    margin-top: 1rem;
+.sobre-texto ul{
+   list-style: none;
+   margin-top: 1rem;
 }
-
-.sobre-texto li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
+.sobre-texto li{ 
+   margin-bottom: 0.5rem;
+   padding-left: 1.5rem;
+   position: relative;
 }
-
 .sobre-texto li::before {
-    content: '•';
-    color: var(--cor-destaque);
-    position: absolute;
-    left: 0;
+   content: '•';/*Ponto do lado da palavra*/
+   color: var(--cor-destaque);
+   position: absolute;/*Espaço do ponto*/
+   left: 0;/*Posição Horizontal */
 }
