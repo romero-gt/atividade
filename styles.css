@@ -1,78 +1,89 @@
 /* variaveis de cores */
 :root {
-    --cor-primaria: #0a243e;
-    --cor-texto: #333;
-    --cor-clara: #f9f9f9;
+  --cor-primaria: #0a243e;
+  --cor-texto: #333;
+  --cor-clara: #f9f9f9;
 }
 
 /* reset layout navegador*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: var(--cor-texto)
-}
-
-.cabecalho {
-    background-color: var(--cor-primaria);
-    color: var(--cor-clara);
-    padding: 1rem 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: var(--cor-texto);
 }
 
 .logo {
-    width: 150px;
+  width: 150px;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  padding: 1rem 0;
+  background-color: var(--cor-primaria);
+  color: var(--cor-clara);
 }
 
 .cabecalho .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
 }
 
 .menu a {
-    color: var(--cor-clara);
-    text-decoration: none;
+  color: var(--cor-clara);
+  text-decoration: none;
 }
 
 .banner {
-    position: relative;
-    color: var(--cor-clara);
-    padding: 0;
-    overflow: hidden;
-    height: 90vh;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  padding: 0;
+  color: var(--cor-clara);
 }
 
 .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .container {
+  max-width: 600px;
+}
