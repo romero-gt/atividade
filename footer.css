@@ -34,14 +34,31 @@ footer {
     padding: 20px;
 }
 
+iframe {
+    width: 600px;
+}
+
 @media (max-width: 768px) {
     footer {
         overflow-x: hidden;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-container {
+        width: 100%;
     }
 
     .footer-content {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+    }
+
+    .lang {
+        align-self: center;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
