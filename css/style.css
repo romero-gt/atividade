@@ -195,55 +195,104 @@ body {
 }
 
 /* Seção Conteudo */
-#galeria {
+.conteudo {
+    background-color: var(--corPrincipal);
     padding: 3.75rem 1.25rem;
     height: 100vh;
+}
+
+.conteudo .container {
+    max-width: 68.75rem;
     margin: 10rem auto;
+    text-align: center;
+}
+
+.conteudo .container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--corSegundario);
+}
+
+/* Blocos de tópicos */
+.conteudo .container .topicos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conteudo .container .topicos .topico {
+    background-color: var(--corText);
+    border-radius: 0.75rem;
+    padding: 1.875rem 1.25rem;
+    width: 17.5rem;
+    box-shadow: o .375rem .75rem rgb(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.conteudo .container .topicos .topico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .75rem 1.25rem rgb(0, 0, 0, 0.15);
+}
+
+.conteudo .container .topicos .topico h3 {
+    font-size: 1.3rem;
+    margin-bottom: .625rem;
+}
+
+.conteudo .container .topicos .topico p {
+    font-size: 1.1rem;
+    color: var(--corText2);
+}
+
+/* Seção Galeria */
+.galeria {
+    padding: 3.75rem 1.25rem;
+    height: 100vh;
+    margin: 15rem auto;
   }
   
-  .galeria .container {
+.galeria .container {
     max-width: 75rem;
     margin: 0 auto;
     text-align: center;
-  }
+}
   
-  .galeria h2 {
+.galeria h2 {
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     padding: 5rem;
-    color: #333;
-  }
+    
+}
   
-  /* Estilo com Flexbox */
-  .box-img {
+/* Estilo com Flexbox */
+.box-img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1.25rem;
-  }
+}
   
-  /* Imagens com mesmo tamanho */
-  .img-container {
+/* Imagens com mesmo tamanho */
+.img-container {
     flex: 1 1 17.5rem;
-    max-width: 20rem;
+    max-width: 25rem;
     height: 20rem;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: transform 0.3s ease;
-  }
+}
   
-  .img-container img {
+.img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
-  }
+}
   
-  /* Efeito ao passar o mouse */
-  .img-container:hover img {
+/* Efeito ao passar o mouse */
+.img-container:hover img {
     transform: scale(1.05);
-  }
-  
-  
+}
