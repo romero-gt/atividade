@@ -51,9 +51,9 @@ justify-content: space-between; /* Alinhar item,Mexe na Horizontal*/
     color: var(--cor-clara);
     padding: 0%; /*adicionar espaço interno dentro de um elemento*/
     overflow: hidden; /*quando o conteúdo de um elemento é maior do que a área disponível para ele*/
-    height: 90vh;/*Altura*/
+    height: 90vh;/*Altura do video*/
     display: flex;
-    align-items: center; /*Alinhar item, Mexe na Vertical*/
+    align-items: center ; /*Alinhar item, Mexe na Vertical*/
 }
 .video-container{
     position: absolute;
@@ -80,8 +80,15 @@ justify-content: space-between; /* Alinhar item,Mexe na Horizontal*/
 }
 .banner .container {
     max-width: 600px;
-    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
+
 .sobre{
     padding: 4rem;/*adicionar espaço interno dentro de um elemento*/
 }
@@ -111,4 +118,30 @@ justify-content: space-between; /* Alinhar item,Mexe na Horizontal*/
    color: var(--cor-destaque);
    position: absolute;/*Espaço do ponto*/
    left: 0;/*Posição Horizontal */
+}
+/*Botão Moodle*/
+.botao {
+    display: inline-block;
+    background: var(--cor-primaria);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.botao:hover {
+   transform: translateY(-2px);
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+o{
+    color: var(--cor-clara);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
