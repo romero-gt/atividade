@@ -22,11 +22,11 @@ footer {
 .lang {
     display: flex;
     color: white;
-    gap: 20px;
-    padding: 20px;
+    gap: 4rem;
+    padding: 0;
 }
 
-.lang p {
+.lang a {
     padding-bottom: 20px;
 }
 
@@ -61,4 +61,16 @@ iframe {
     iframe {
         width: 100%;
     }
+}
+
+/* linguagens */
+
+.lista-linguagens {
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+.lista-linguagens a {
+    color: var(--cor-clara);
+    text-decoration: none;
 }

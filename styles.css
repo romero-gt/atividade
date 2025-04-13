@@ -14,6 +14,12 @@
     box-sizing: border-box;
 }
 
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -125,4 +131,45 @@ body {
     color: var(--cor-destaque);
     position: absolute;
     left: 0;
+}
+
+/* Conteúdo */
+
+.conteudo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.topico {
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    min-width: 500px;
+    padding: 1.5rem;
+    box-shadow: var(--sombra);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+/* GALERIA */ 
+
+.galeria-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: var(--sombra);
+}
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
 }
